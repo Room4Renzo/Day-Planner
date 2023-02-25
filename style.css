@@ -49,7 +49,7 @@ textarea {
 }
 
 .past {
-    background-color: #d3d3d3;
+    background-color: blue;
     color: white;
 }
 
@@ -77,10 +77,6 @@ textarea {
     transition: all 0.3s ease-in-out;
 }
 
-/* textarea:focus {
+textarea:focus {
     outline: none;
-} */
-
-textarea {
-    width: 100%;
-    height: 100%;}
+}
