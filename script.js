@@ -8,12 +8,30 @@ const time = $(`.time-block`);
 const description = $(`.description`);
 
 // for loop compares id of all items of block class against current time
-for (let i = 0; i < 9; i++) {
-    if (currentTime === time.attr(`id`)) {
-        description.attr(`class`, `present`)
-    } else if (currentTime > time.attr(`id`)) {
-        description = $(`class`, `past`)
-    } else if (currentTime < time.attr(`id`)) {
-        description = $(`class`, `future`)
-    }
-}
+// for (let i = 0; i < description.length; i++) {
+//     console.log($this);
+    // console.log(time.attr(`id`));
+
+    // if (currentTime === time.attr(`id`)) {
+    //     description.attr(`class`, `present`)
+    // } else if (currentTime > time.attr(`id`)) {
+    //     description = $(`class`, `past`)
+    // } else if (currentTime < time.attr(`id`)) {
+    //     description = $(`class`, `future`)
+    // }
+// }
+
+// console.log(description)
+
+description.each(function() {
+    if (currentTime === ($(this).parent().attr(`id`))){
+        $(this).attr(`class`, `present`);
+    } else if (currentTime > ($(this).parent().attr(`id`))){
+        $(this).attr(`class`, `past`);
+        } else if (currentTime < ($(this).parent().attr(`id`))){
+            $(this).attr(`class`, `future`);
+        };
+
+        console.log($(this).parent().attr(`id`));
+
+});
