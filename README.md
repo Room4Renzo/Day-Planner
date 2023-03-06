@@ -1,92 +1,48 @@
-# Day-Planner
+# Day Planner
 
 A daily planner allowing a user to add tasks/events for each hour of the day
 
-## Third-Party APIs: Work Day Scheduler
+## Table of Contents
 
-## Your Task
+* [Description](#description)
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+* [Installation](#installation)
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+* [Usage](#usage)
 
-## User Story
+* [Screenshots](#screenshots)
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+* [Links](#links)
 
-## Acceptance Criteria
+* [Credits](#credits)
 
-The app should:
+* [License](#license)
 
-* Display the current day at the top of the calender when a user opens the planner.
- 
-* Present timeblocks for standard business hours when the user scrolls down.
- 
-* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
- 
-* Allow a user to enter an event when they click a timeblock
+## Description
 
-* Save the event in local storage when the save button is clicked in that timeblock.
+This project is a Daily Planner that allows a user to add tasks/events for each hour of the day. The planner is color coded to indicate whether the time slot is in the past, present, or future. The user's input is optionally saved to local storage and will persist when the page is refreshed.
 
-* Persist events between refreshes of a page
+## Installation
 
-The following animation demonstrates the application functionality:
+To install this project, clone the repository to your local machine.
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+## Usage
 
+To use this project, open the index.html file in your browser.
 
-## Grading Requirements
+## Screenshots
 
-This homework is graded based on the following criteria: 
+![Screenshot](./assets/images/Dayplanner.png)
 
-### Technical Acceptance Criteria: 40%
+## Links
 
-* Satisfies all of the above acceptance criteria plus the following:
+* [Repository](https://github.com/Room4Renzo/Day-Planner)
+* [Deployed Application](https://room4renzo.github.io/Day-Planner/)
 
-  * Uses a date utility library to work with date and time
+## Credits
 
-### Deployment: 32%
+Made by: Room4Renzo
 
-* Application deployed at live URL
+## License
 
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
+MIT License
