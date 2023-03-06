@@ -25,13 +25,10 @@ const description = $(`.description`);
 
 description.each(function() {
     if (currentTime === ($(this).parent().attr(`id`))){
-        $(this).attr(`class`, `present`);
+        $(this).addClass(`present`);
     } else if (currentTime > ($(this).parent().attr(`id`))){
-        $(this).attr(`class`, `past`);
+        $(this).addClass(`past`);
         } else if (currentTime < ($(this).parent().attr(`id`))){
-            $(this).attr(`class`, `future`);
+            $(this).addClass(`future`);
         };
-
-        console.log($(this).parent().attr(`id`));
-
-});
+    });
