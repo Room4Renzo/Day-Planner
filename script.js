@@ -6,22 +6,8 @@ let currentTime = moment().hour()
 console.log('currentTime: ', currentTime);
 const time = $(`.time-block`);
 const description = $(`.description`);
+const saveBtn = $(`.saveBtn`);
 
-// for loop compares id of all items of block class against current time
-// for (let i = 0; i < description.length; i++) {
-//     console.log($this);
-    // console.log(time.attr(`id`));
-
-    // if (currentTime === time.attr(`id`)) {
-    //     description.attr(`class`, `present`)
-    // } else if (currentTime > time.attr(`id`)) {
-    //     description = $(`class`, `past`)
-    // } else if (currentTime < time.attr(`id`)) {
-    //     description = $(`class`, `future`)
-    // }
-// }
-
-// console.log(description)
 
 description.each(function() {
     if (currentTime === ($(this).parent().attr(`id`))){
@@ -32,3 +18,11 @@ description.each(function() {
             $(this).addClass(`future`);
         };
     });
+
+    saveBtn.on(`click`, function(){
+        let text = $(this).siblings(`.description`).val();
+        let time = $(this).parent().attr(`id`);
+        localStorage.setItem(time, text);
+    });
+
+    $(this).siblings(`description`).val(localStorage.getItem(time, text))
